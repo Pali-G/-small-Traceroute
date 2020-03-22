@@ -1,4 +1,3 @@
-//Patricia Gerbig, Philipp Wellner, Jakob Radus
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -66,7 +65,6 @@ int main(int argc, char const *argv[]){
     }
 
     else{
-      //printf("bis jetzt funktioniert alles");
       inet_ntop(AF_INET, &client_addr.sin_addr, nachricht, INET_ADDRSTRLEN); //wandelt IPv4-Adressen von binär zu text um
       printf("%d %s\t \n", ttl, nachricht);
       if(!strncmp(nachricht, IPZ, sizeof(IPZ)))
